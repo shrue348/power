@@ -30,11 +30,18 @@ $(function(){
 		]
 	});
 
-	$('.service_slider').slick({
-		dots: true
-	})
-
 	baguetteBox.run('.baguetteBox');
+
+
+	$(".cat_item__carousel_wrap").mCustomScrollbar({
+        axis: "x",
+        theme: "dark-thin",
+        autoExpandScrollbar: !0,
+        advanced: {
+            autoExpandHorizontalScroll: !0
+        }
+    })
+
 });
 
 
