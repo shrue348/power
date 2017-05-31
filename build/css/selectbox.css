@@ -72,7 +72,7 @@
 .selectbox li.disabled { display: none}
 .selectbox li.selected, .selectbox li.sel {
 	background: none;
-	color: #ccc;
+	color: #E62228;
 }
 .selectbox li:hover {
 	background: #dcdcdc;

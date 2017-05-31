@@ -56,14 +56,15 @@
 			</ul>
 			
 			<div class="header_socicons justify__item">
-				<a href="" class="header_socicon"><img src="" alt=""></a>
-				<a href="" class="header_socicon"><img src="" alt=""></a>
+				<a href="" class="header_socicon header_socicon-insta"></a>
+				<a href="" class="header_socicon header_socicon-vk"></a>
 			</div>
 	
 			<a href="" class="header_phone justify__item"><span class="colorred">8 800</span> 500 63 24</a>
 
 			<div class="header_reg justify__item">
 				<a href="" class="header_reg__link">Регистрация</a>
+				<span>|</span>
 				<a href="" class="header_reg__link">Вход</a>
 			</div>
 		</div>
@@ -84,9 +85,9 @@
 			</ul>
 				
 			<div class="header_search justify__item">
-				<a href="" class="header_search__toggle"></a>
+				<a href="javascript:;" class="header_search__toggle" onclick="$(this).next().toggle();"></a>
 
-				<div class="header_search__form">
+				<div class="header_search__form" style="display: none;">
 					<form action="">
 						<input type="text">
 						<button></button>
@@ -94,7 +95,12 @@
 				</div>
 			</div>
 			
-			<div class="header_cart justify__item">Корзина</div>
+			<div class="header_cart justify__item">
+				<div class="header_cart__content">
+					<span class="header_cart__count">22</span> шт.
+					<span class="header_cart__total">125 000</span> руб.
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
