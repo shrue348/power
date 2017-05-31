@@ -32,6 +32,8 @@ $(function(){
 
 	baguetteBox.run('.baguetteBox');
 
+	$('select').selectbox();
+
 
 	$(".cat_item__carousel_wrap").mCustomScrollbar({
         axis: "x",

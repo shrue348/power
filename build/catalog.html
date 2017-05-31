@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/iconic.css">
 	<link rel="stylesheet" href="css/baguetteBox.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/selectbox.css">
 
 
 	<script src="js/jquery.min.js"></script>
@@ -21,6 +22,7 @@
 	<script src="js/baguetteBox.min.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="js/jquery.selectbox.min.js"></script>
 	<script src="js/ready.js"></script>
 </head>
 <body>
@@ -115,21 +117,48 @@
 		<div class="cat">
 			<div class="row">
 				<div class="cat_left col-3">
-					<div class="cat_filter">123</div>
+					<div class="filter">
+						<form action="">
+							<div class="filter_block">
+								<div class="filter_block__title">Производитель</div>
 
+								<label class="check_wrap filter_radio"><input type="checkbox" name="cart_fiz_jur"> <span>Brand <span class="colorgrey">(10)</span></span></label>
+								<label class="check_wrap filter_radio"><input type="checkbox" name="cart_fiz_jur"> <span>Brand <span class="colorgrey">(10)</span></span></label>
+								<label class="check_wrap filter_radio"><input type="checkbox" name="cart_fiz_jur"> <span>Brand <span class="colorgrey">(10)</span></span></label>
+								<label class="check_wrap filter_radio"><input type="checkbox" name="cart_fiz_jur"> <span>Brand <span class="colorgrey">(10)</span></span></label>
+								<label class="check_wrap filter_radio"><input type="checkbox" name="cart_fiz_jur"> <span>Brand <span class="colorgrey">(10)</span></span></label>
+								<label class="check_wrap filter_radio"><input type="checkbox" disabled name="cart_fiz_jur"> <span>Brand</span></label>
+								<label class="check_wrap filter_radio"><input type="checkbox" disabled name="cart_fiz_jur"> <span>Brand</span></label>
+								<label class="check_wrap filter_radio"><input type="checkbox" disabled name="cart_fiz_jur"> <span>Brand</span></label>
+							</div>
 
+							<button class="filter_btn btn" type="submit">Показать</button>
+							<button class="filter_btn btn btn_grey" type="button">Сбросить</button>
+						</form>
+					</div>
+
+					<div class="history">
+						<div class="history_block">
+							<div class="history_block__title">Просмотренные товары</div>
+
+							<a href="" class="colorred hover">Все просмотренные товары</a>
+						</div>
+					</div>
 
 				</div>
 				<div class="cat_right col-9">
-					<div class="cat_sort clear">
-						<select name="">
-							<option value="">Сначала недорогие</option>
-							<option value="">Сначала недорогие</option>
-							<option value="">Сначала недорогие</option>
-							<option value="">Сначала недорогие</option>
-							<option value="">Сначала недорогие</option>
-						</select>
+					<div class="cat_top clear">
+						<div class="cat_sort">
+							<select name="">
+								<option value="">Сначала недорогие</option>
+								<option value="">Сначала дорогие</option>
+								<option value="">Сначала старые</option>
+								<option value="">Сначала новые</option>
+								<option value="">Сначала еще</option>
+							</select>
+						</div>
 					</div>
+						
 
 					<div class="cat_sections clear">
 						<a href="" class="cat_sections__item">Сывороточный протеин</a>
