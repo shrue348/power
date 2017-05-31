@@ -1,3 +1,5 @@
+<!--Здесь только другой блок header_reg-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,9 +64,21 @@
 			<a href="" class="header_phone justify__item"><span class="colorred">8 800</span> 500 63 24</a>
 
 			<div class="header_reg justify__item">
-				<a href="" class="header_reg__link">Регистрация</a>
-				<span>|</span>
-				<a href="cabinet.html" class="header_reg__link">Вход</a>
+				<a href="javascript:;" class="header_reg__link" onclick="$('.header_reg_dropdown').fadeToggle();">fdjnv@mail.ru</a>
+				<a href="/" class="header_reg__link-exit"></a>
+
+				<div class="header_reg_dropdown" style="display: none;">
+					<div class="header_reg_dropdown__fire">у вас <span>333 440</span> баллов</div>
+					<hr>
+					<a href="" class="header_reg_dropdown__link">Личные данные</a>
+					<a href="" class="header_reg_dropdown__link">Подписки</a>
+					<hr>
+
+					<a href="" class="header_reg_dropdown__link">Активные заказы</a>
+					<a href="" class="header_reg_dropdown__link">Выполненные заказы</a>
+					<a href="" class="header_reg_dropdown__link">Отмененные заказы</a>
+					<a href="" class="header_reg_dropdown__link">Все заказы</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -150,259 +164,95 @@
 	</div>
 </div>
 
-<div class="cart_page">
+<div class="cabinet_page">
 	<div class="wrapper">
-		<h1>Оформление заказа</h1>
-	
-		<table class="cart_table">
-			<tr>
-				<td>
-					<img src="img/_complete.png" alt="Sculptor Elite Vita 40 порций 400 грамм">
-				</td>
-				<td>
-					<div class="cart_table__title">Sculptor Elite Vita 40 порций 400 грамм</div>
-				</td>
-				<td>
-					<div class="cart_table__old_price"><span>16 222</span> руб.</div>
-					<div class="cart_table__price"><span>3 400</span> руб.</div>
-				</td>
-				<td class="aligncenter">
-					<div class="cart_table__quantity quantuty">
-						<button class="quantuty__minus">-</button>
-						<div class="quantuty__val">10</div>
-						<button class="quantuty__plus">+</button>
-					</div>
-				</td>
-				<td>
-					<div class="cart_table__total"><span>3 400</span> руб.</div>
-				</td>
-				<td>
-					<div class="cart_table__fire"><span>+50 баллов</span></div>
-				</td>
-				<td>
-					<a href="javascript:;" class="cart_table__remove"></a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="img/_complete.png" alt="Sculptor Elite Vita 40 порций 400 грамм">
-				</td>
-				<td>
-					<div class="cart_table__title">Sculptor Elite Vita 40 порций 400 грамм</div>
-				</td>
-				<td>
-					<div class="cart_table__old_price"><span>16 222</span> руб.</div>
-					<div class="cart_table__price"><span>3 400</span> руб.</div>
-				</td>
-				<td class="aligncenter">
-					<div class="cart_table__quantity quantuty">
-						<button class="quantuty__minus">-</button>
-						<div class="quantuty__val">10</div>
-						<button class="quantuty__plus">+</button>
-					</div>
-				</td>
-				<td>
-					<div class="cart_table__total"><span>3 400</span> руб.</div>
-				</td>
-				<td>
-					<div class="cart_table__fire"><span>+50 баллов</span></div>
-				</td>
-				<td>
-					<a href="javascript:;" class="cart_table__remove"></a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="img/_complete.png" alt="Sculptor Elite Vita 40 порций 400 грамм">
-				</td>
-				<td>
-					<div class="cart_table__title">Sculptor Elite Vita 40 порций 400 грамм</div>
-				</td>
-				<td>
-					<div class="cart_table__old_price"><span>16 222</span> руб.</div>
-					<div class="cart_table__price"><span>3 400</span> руб.</div>
-				</td>
-				<td class="aligncenter">
-					<div class="cart_table__quantity quantuty">
-						<button class="quantuty__minus">-</button>
-						<div class="quantuty__val">10</div>
-						<button class="quantuty__plus">+</button>
-					</div>
-				</td>
-				<td>
-					<div class="cart_table__total"><span>3 400</span> руб.</div>
-				</td>
-				<td>
-					<div class="cart_table__fire"><span>+50 баллов</span></div>
-				</td>
-				<td>
-					<a href="javascript:;" class="cart_table__remove"></a>
-				</td>
-			</tr>
-
-			
-		</table>
-
-
-		<div class="cart_total">
-			<div class="cart_total__label">Сумма заказа:</div>
-			<div class="cart_total__val"><span>22 720</span> руб,</div>
-		</div>
-		<div class="cart_fire_wrap">
-			<span class="cart_fire"><span>3 400</span> Баллов за покупку</span>
-		</div>
-
+		<h1>Личный кабинет</h1>
 		
+		<div class="row">
+			<div class="col-3">
+				<div class="cabinet_left">
+					<div class="cabinet__fire">у вас <span>333 440</span> <br>бонусных баллов</div>
 
-		<div class="cart_form form">
-			<form action="">
-				<hr>
-				<div class="h2">Заполните контактные данные</div>
-				<div class="cart_form__contacts clear">
-					<div class="row">
-						<div class="col-6 mgb15">
-							<div class="form_item_label">Ф.И.О. <span class="colorred">*</span></div>
-							<input type="text">
-						</div>
-						<div class="col-6 mgb15">
-							<div class="form_item_label">Телефон <span class="colorred">*</span></div>
-							<input type="text">
-						</div>
-						<div class="col-6 mgb40">
-							<div class="form_item_label">E-mail <span class="colorred">*</span></div>
-							<input type="email">
-						</div>
-						<div class="col-6 mgb40 mgt35 nowrap ">
-							<label class="radio_wrap inline-block mgr20"><input type="radio" name="cart_fiz_jur"> <span>Физ. лицо</span></label>
-							<label class="radio_wrap inline-block"><input type="radio" name="cart_fiz_jur"> <span>Юр. лицо</span></label>
-						</div>
+					<div class="cabinet_left__bottom">
+						<div class="h3">Личная информация</div>
+
+						<a href="" class="cabinet__link active">Личные данные</a>
+						<a href="" class="cabinet__link">Подписки</a>
+
+						<div class="h3">Мои заказы</div>
+
+						<a href="" class="cabinet__link">Активные заказы</a>
+						<a href="" class="cabinet__link">Выполненные заказы</a>
+						<a href="" class="cabinet__link">Отмененные заказы</a>
+						<a href="" class="cabinet__link">Все заказы</a>
 					</div>
 				</div>
-				<hr>
-				
-				<div class="cart_form__delivery clear">
-					<div class="h2">Выберите способ доставки</div>
-					<label class="radio_wrap">
-						<input type="radio" name="cart_delivery"> 
-						<div>
-							<div class="h5">Самовывоз</div>
+			</div>
+			<div class="col-9">
+				<div class="cabinet_right">
+					<div class="h2">Личные данные</div>
 
-							<div class="form_item_label">Выберите пункт самовывоза</div>
-							<select name="" id="">
-								<option value="">1</option>
-								<option value="">2</option>
-								<option value="">3</option>
-							</select>
+					<div class="form row">
+						<div class="col-4">
+							<div class="mgb25">
+								<div class="form_item_label">Ф.И.О. <span class="colorred">*</span></div>
+								<input type="text">
+							</div>
+							<div class="mgb25">
+								<div class="form_item_label">Логин <span class="colorred">*</span></div>
+								<select name="" >
+									<option value="">fdjnv@mail.ru</option>
+									<option value="">fdjnv@mail.ru</option>
+									<option value="">fdjnv@mail.ru</option>
+									<option value="">fdjnv@mail.ru</option>
+								</select>
+							</div>
+							<button class="btn">Сохранить изменения</button>
 						</div>
-					</label>
-
-					<label class="radio_wrap">
-						<input type="radio" name="cart_delivery"> 
-						<div>
-							<div class="h5">Курьером по Санкт-Петербургу</div>
-
-							<p>При заказе до 13:00 доставим уже сегодня — <span class="b">бесплатно</span></p>
-						</div>
-					</label>
-
-					<label class="radio_wrap">
-						<input type="radio" name="cart_delivery"> 
-						<div>
-							<div class="h5">Курьером в пригороды Санкт-Петербурга</div>
-
-							<p>Наш менеджер согласует с вами возможность и удобное время доставки. При заказе от 2500 до 5000 руб. — 200 руб. При заказе от 5000 руб. — <span class="b">бесплатно</span></p>
-
-							<div class="row">
-								<div class="col-6 mgb15">
-									<div class="form_item_label">Регион <span class="colorred">*</span></div>
-									<select name="" id="">
-										<option value="">1</option>
-										<option value="">2</option>
-										<option value="">3</option>
-									</select>
-								</div>
-
-								<div class="col-6 mgb15">
-									<div class="form_item_label">Город <span class="colorred">*</span></div>
-									<select name="" id="">
-										<option value="">1</option>
-										<option value="">2</option>
-										<option value="">3</option>
-									</select>
-								</div>
+						<div class="col-4">
+							<div class="mgb25">
+								<div class="form_item_label">Телефон <span class="colorred">*</span></div>
+								<input type="text">
 							</div>
 
-							<div class="form_item_label">Укажите точный адрес с индеком <span class="colorred">*</span></div>
-							<textarea rows="7"></textarea>
-						</div>
-					</label>
+							<div class="mgb25">
+								<div class="form_item_label">Пароль <span class="colorred">*</span></div>
 
-					<label class="radio_wrap">
-						<input type="radio" name="cart_delivery"> 
-						<div>
-							<div class="h5">Доставка по всей России - Сервис доставки DDelivery <br><a class="colorred unhover" href="">Выберите условия доставки </a></div>
-							<p><span class="b">ВНИМАНИЕ:</span> заказы через сервис DDelivery отправляются после ПОЛНОЙ оплаты заказа на сайте </p>
+								<div class="row fluid">
+									<div class="col-6">
+										<input type="password">
+									</div>
+									<div class="col-6">
+										<a href="" class="colorred unhover font14 nowrap mgt10 block">Изменить пароль</a>
+									</div>
+								</div>
+							</div>
 						</div>
-					</label>
-						
-					<hr>
-				</div>
-				<div class="cart_form__payment clear">
-					<hr>
-					<div class="h2">Выберите способ оплаты</div>
+						<div class="col-4">
+							<div class="mgb25">
+								<div class="form_item_label">E-mail <span class="colorred">*</span></div>
+								<input type="email">
+							</div>
 
-					<label class="radio_wrap">
-						<input type="radio" name="cart_payment"> 
-						<div>
-							<div class="h5">Наличными при получнии</div>
-							<p>Оплата наличными при получении заказа.</p>
+
+							<div class="row fluid">
+								<div class="col-6">
+									<div class="form_item_label">Новый пароль</div>
+									<input type="password">
+								</div>
+								<div class="col-6">
+									<div class="form_item_label">Повторите пароль</div>
+									<input type="password">
+								</div>
+							</div>
 						</div>
-					</label>
-
-					<label class="radio_wrap">
-						<input type="radio" name="cart_payment"> 
-						<div>
-							<div class="h5">Онлайн оплата</div>
-							<p>Онлайн оплата на сайте любым способом</p>
-						</div>
-					</label>
-				
-
-					<hr>
-					<div class="mgb20 nowrap">
-						<label class="radio_wrap inline-block mgr20"><input type="radio" name="club_card"> <div>У меня есть клубная карта</div></label>
-						<label class="radio_wrap inline-block"><input type="radio" name="club_card"> <div>У меня нет клубной карты</div></label>
-					</div>
-					<div class="mgb30">
-						<div class="form_item_label">Комментарий к заказу <span class="colorred">*</span></div>
-						<textarea rows="7"></textarea>
 					</div>
 				</div>
-
-				<div class="cart_form__complete">
-					<div class="mgb15 nowrap">
-						<div class="cart_delivery__label">Стоимость доставки:</div>
-						<div class="cart_delivery__val"><span>0</span> руб.</div>
-					</div>
-					<div class="mgb15 nowrap">
-						<div class="cart_summ__label">Сумма заказа:</div>
-						<div class="cart_summ__val"><span>22 720</span> руб.</div>
-					</div>
-					<div class="mgb30 nowrap">
-						<div class="cart_total__label">Итого к оплате:</div>
-						<div class="cart_total__val"><span>22 720</span> руб.</div>
-					</div>
-						
-					<div class="mgb30 nowrap">
-						<div class="cart_fire"><span>3 400</span> Баллов за покупку</div>
-					</div>
-
-					<button class="cart_submit" type="submit">Оформить заказ</button>
-				</div>
-			</form>
+			</div>
 		</div>
- 	</div>
+	</div>
 </div>
+	
 <div class="footer">
 	<div class="wrapper">
 		<div class="row">

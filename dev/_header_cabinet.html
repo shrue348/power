@@ -1,3 +1,5 @@
+<!--Здесь только другой блок header_reg-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,9 +64,21 @@
 			<a href="" class="header_phone justify__item"><span class="colorred">8 800</span> 500 63 24</a>
 
 			<div class="header_reg justify__item">
-				<a href="" class="header_reg__link">Регистрация</a>
-				<span>|</span>
-				<a href="cabinet.html" class="header_reg__link">Вход</a>
+				<a href="javascript:;" class="header_reg__link" onclick="$('.header_reg_dropdown').fadeToggle();">fdjnv@mail.ru</a>
+				<a href="/" class="header_reg__link-exit"></a>
+
+				<div class="header_reg_dropdown" style="display: none;">
+					<div class="header_reg_dropdown__fire">у вас <span>333 440</span> баллов</div>
+					<hr>
+					<a href="" class="header_reg_dropdown__link">Личные данные</a>
+					<a href="" class="header_reg_dropdown__link">Подписки</a>
+					<hr>
+
+					<a href="" class="header_reg_dropdown__link">Активные заказы</a>
+					<a href="" class="header_reg_dropdown__link">Выполненные заказы</a>
+					<a href="" class="header_reg_dropdown__link">Отмененные заказы</a>
+					<a href="" class="header_reg_dropdown__link">Все заказы</a>
+				</div>
 			</div>
 		</div>
 	</div>

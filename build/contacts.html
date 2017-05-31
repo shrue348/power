@@ -20,7 +20,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/baguetteBox.min.js"></script>
-	<script src="js/slick.js"></script>
 	<script src="js/jquery.mCustomScrollbar.min.js"></script>
 	<script src="js/jquery.selectbox.min.js"></script>
 	<script src="js/ready.js"></script>
@@ -65,7 +64,7 @@
 			<div class="header_reg justify__item">
 				<a href="" class="header_reg__link">Регистрация</a>
 				<span>|</span>
-				<a href="" class="header_reg__link">Вход</a>
+				<a href="cabinet.html" class="header_reg__link">Вход</a>
 			</div>
 		</div>
 	</div>
@@ -85,21 +84,56 @@
 			</ul>
 				
 			<div class="header_search justify__item">
-				<a href="javascript:;" class="header_search__toggle" onclick="$(this).next().toggle();"></a>
-
-				<div class="header_search__form" style="display: none;">
-					<form action="">
-						<input type="text">
-						<button></button>
-					</form>
-				</div>
+				<a href="javascript:;" class="header_search__toggle" onclick="$('.header_search__dropdown').fadeToggle();"></a>
 			</div>
 			
 			<div class="header_cart justify__item">
+				<a href="javascript:;" class="header_cart_toggle" onclick="$('.header_cart_dropdown').fadeToggle();"></a>
 				<div class="header_cart__content">
 					<span class="header_cart__count">22</span> шт.
 					<span class="header_cart__total">125 000</span> руб.
 				</div>
+
+				<div class="header_cart_dropdown" sytle="display: none;">
+
+					<div class="header_cart_item">
+						<div class="header_cart_item__img_wrap">
+							<img src="img/_header_cart_item.png" alt="">
+						</div>
+						<div class="header_cart_item__desc">
+							<div class="header_cart_item__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+							<div class="header_cart_item__price"><span>2 400</span> руб.</div>
+						</div>
+						<div class="header_cart_item__remove">
+							<a class="cart_table__remove" href="javascript:;"></a>
+						</div>
+					</div>
+					<div class="header_cart_item">
+						<div class="header_cart_item__img_wrap">
+							<img src="img/_header_cart_item.png" alt="">
+						</div>
+						<div class="header_cart_item__desc">
+							<div class="header_cart_item__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+							<div class="header_cart_item__price"><span>2 400</span> руб.</div>
+						</div>
+						<div class="header_cart_item__remove">
+							<a class="cart_table__remove" href="javascript:;"></a>
+						</div>
+					</div>
+
+					<a href="cart.html" class="btn block">Оформить заказ</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header_search__dropdown form">
+			<div class="wrapper">
+				<form action="">
+					<div class="header_search__form_wrap">
+						<input type="text">
+						<button></button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -209,6 +243,7 @@
 
 	<div class="contacts_map"></div>
 </div>
+
 <div class="footer">
 	<div class="wrapper">
 		<div class="row">
@@ -260,6 +295,28 @@
 	</div>
 </div>
 
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+
+	<div class="h2">Купить в один клик</div>
+
+	<div class="form">
+		<form action="">
+			<div class="mgb25">
+				<div class="form_item_label">Ф.И.О. <span class="colorred">*</span></div>
+				<input type="text">
+			</div>
+
+			<div class="mgb25">
+				<div class="form_item_label">Комментарий</div>
+				<textarea name="" rows="10"></textarea>
+			</div>
+
+			<button class="btn">Отправить</button>
+		</form>
+	</div>
+</div>
 
 </body>
 </html>
