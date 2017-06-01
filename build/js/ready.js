@@ -1,7 +1,6 @@
 'use strict';
 
 $(function(){
-
 	baguetteBox.run('.baguetteBox');
 
 	$('select').selectbox();
