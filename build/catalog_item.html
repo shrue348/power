@@ -22,6 +22,9 @@
 	<script src="js/baguetteBox.min.js"></script>
 	<script src="js/jquery.mCustomScrollbar.min.js"></script>
 	<script src="js/jquery.selectbox.min.js"></script>
+	
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 	<script src="js/ready.js"></script>
 </head>
 <body>
@@ -34,15 +37,16 @@
 		<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Бонусы</a></li>
 		<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Акции</a></li>
 		<li class="mobile_menu__item"><a href="article.html" class="mobile_menu__link">Статьи</a></li>
-		<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Магазины</a></li>
+		<li class="mobile_menu__item"><a href="contacts.html" class="mobile_menu__link">Магазины</a></li>
 	</ul>
+	
 	<div class="mobile_menu__overlay"></div>
 </div>
 
 <div class="header">
 	<div class="header_top">
 		<div class="wrapper justify">
-			<a href="" class="mobile_menu__toggle justify__item">M</a>
+			<a href="javascript:;" class="mobile_menu__toggle justify__item"></a>
 
 			<ul class="header_menu justify__item clear">
 				<li class="header_menu__item"><a href="" class="header_menu__link">О компании</a></li>
@@ -51,7 +55,7 @@
 				<li class="header_menu__item"><a href="" class="header_menu__link">Бонусы</a></li>
 				<li class="header_menu__item"><a href="" class="header_menu__link">Акции</a></li>
 				<li class="header_menu__item"><a href="article.html" class="header_menu__link">Статьи</a></li>
-				<li class="header_menu__item"><a href="" class="header_menu__link header_menu__link-active">Магазины</a></li>
+				<li class="header_menu__item"><a href="contacts.html" class="header_menu__link header_menu__link-active">Магазины</a></li>
 			</ul>
 			
 			<div class="header_socicons justify__item">
@@ -75,13 +79,16 @@
 					<img src="img/logo.png" alt="OLBshop" class="header_logo__img">
 				</a>
 			</div>
-
-			<ul class="main_menu justify__item">
-				<li class="main_menu__item"><a href="" class="main_menu__link">Производители</a></li>
-				<li class="main_menu__item"><a href="catalog.html" class="main_menu__link">Каталог</a></li>
-				<li class="main_menu__item"><a href="" class="main_menu__link">Задачи</a></li>
-				<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
-			</ul>
+			<div class="main_menu justify__item">
+				<a href="javascript:;" class="main_menu__toggle">Меню</a>
+				<ul class="">
+					<li class="main_menu__item"><a href="" class="main_menu__link">Производители</a></li>
+					<li class="main_menu__item"><a href="catalog.html" class="main_menu__link">Каталог</a></li>
+					<li class="main_menu__item"><a href="" class="main_menu__link">Задачи</a></li>
+					<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
+				</ul>
+			</div>
+				
 				
 			<div class="header_search justify__item">
 				<a href="javascript:;" class="header_search__toggle" onclick="$('.header_search__dropdown').fadeToggle();"></a>
@@ -90,8 +97,8 @@
 			<div class="header_cart justify__item">
 				<a href="javascript:;" class="header_cart_toggle" onclick="$('.header_cart_dropdown').fadeToggle();"></a>
 				<div class="header_cart__content">
-					<span class="header_cart__count">22</span> шт.
-					<span class="header_cart__total">125 000</span> руб.
+					<span class="first"><span class="header_cart__count">22</span> шт.</span>
+					<span class="second"><span class="header_cart__total">125 000</span> руб.</span>
 				</div>
 
 				<div class="header_cart_dropdown" sytle="display: none;">
@@ -270,7 +277,7 @@
 		<div class="cat_item__carousel cat_item_carousel">
 			<div class="cat_item_carousel__title">Покупатели также выбирают</div>
 
-			<div class="cat_item__carousel_wrap">
+			<div class="cat_item__carousel_wrap carousel_wrap">
 				<div class="cat_item__carousel_item">
 					<div class="cat_i">
 						<div class="cat_i_wrap">

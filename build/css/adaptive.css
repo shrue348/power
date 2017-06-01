@@ -1,317 +1,132 @@
+@media (max-width: 1280px) {
+	.header_cart_dropdown { left: initial; right: 0;}
+	.header_cart_dropdown:before { left: initial; right: 30px;}
 
-@media (min-width: 980px) {
-	.foto_cat__item_desc_wrap > .row > .col-7,
-	.foto_cat__item_desc_wrap > .row > .col-5 { width: 100%; }
+	.cat_i_fire, .cat_i__btn.btn { padding: 0 3px;}
+	.cat_i_fire:before, .cat_i__btn.btn:before { margin-right: 5px;}
 }
 
 
-/*979*/		@media (min-width: 768px) and (max-width: 979px) {
-	.wrapper { width: 768px;}
-	.header_search { width: 180px;}
-	.header_search__input { width: 133px;}
-	.main_menu__item-search input[type="text"] { width: 260px;}
+@media (min-width: 768px) and (max-width: 979px) {
+	body { font-size: 14px;}
+	.header_menu { display: none;}
+	.mobile_menu__toggle { display: inline-block;}
+	.header_search { border: none;}
+	.header_search__toggle { margin: 0; }
+	.header_cart { margin: 13px 0;}
+	.header_cart__content .first,
+	.header_cart__content .second { display: block;}
+	.header_cart__total { margin-left: 0;}
+	.main_menu__item { margin: 0 3px;}
+	.footer_phone { font-size: 18px;}
 
-	.header__logo.col-4 { width: 26%;}
-	.header__loc_wrap.col-8 { width: 74%;}
-
-	.header__loc-les > .col-6:first-child,
-	.header__loc-kup > .col-6:first-child { width: 60%;}
-	.header__loc-les > .col-6:last-child,
-	.header__loc-kup > .col-6:last-child { width: 40%;}
-
-	.research_item__desc { white-space: normal;}
-	.research_item__desc > .inline-block:nth-child(1) { width: 50%; float: left;}
-	.research_item__desc > .inline-block:nth-child(2) { width: 50%; float: left;}
-	.research_item__desc > .inline-block:nth-child(3) { width: 100%; display: block;}
-	.research_item__desc .btn.mgt35 { margin-top: 0 !important; }
-
-	.article_filter__form_list { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
-	.article_list__item { margin-bottom: 10px; }
-
-	.contacts_desc > .col-6 { width: 100%; margin-bottom: 15px; }
-	.dispanser__zone .col-4 { width: 100%; }
-	.dispanser__list.row > .col-4 { width: 50%; }
-	.dispanser__list.row > .col-4:nth-child(3n+1) { clear: none; }
-	.dispanser__list.row > .col-4:nth-child(2n+1) { clear: left; }
-
-	.left_menu__link { font-size: 17px; }
-	.docs__list { padding: 0; }
-
-	.foto_cat__item_img_wrap.col-8 { width: 100%; margin-bottom: 10px;}
-	.foto_cat__item_desc_wrap.col-4 { width: 100%; }
-
-	.main_menu__item-cart { width: 68px; }
-	.form_wrap { padding: 17px; }
-	.service_slider__title .font44 { font-size: 25px !important; }
-	.service_slider__title .font30 { font-size: 18px !important; }
-	.service_slider .slick-dots { left: auto; right: 28px; bottom: 28px; }
-	.preim_block { height: auto; }
-
-	.medspravki_banner__bottom > span { display: block; }
-	.medspravki_banner__top { margin: 0 15px; }
-	.medspravki_banner__middle {  padding: 15px;}
-
-	.contacts_form .col-6 { width: 100%; }
-
-	.kosmetology_form__wrap  { padding: 3px 14px 3px 15px; background: none #f0f1f1; }
-	.kospetology_preim .col-6 { width: 100%; }
-	.kosmetology_how__item_img { display: none; }
-	.kosmetology_protiv:after { display: none; }
-
+	.cat_i__btn.btn { font-size: 14px;}
+	.cat_left.col-3 { width: 33%;}
+	.cat_right.col-9 { width: 67%;}
+	.cat_items.row > .col-4 { width: 50%;}
+	.cat_items.row > .col-4:nth-child(3n+1) { clear: none;}
+	.cat_items.row > .col-4:nth-child(2n+1) { clear: left;}
 }
 			 
-/*767*/		@media (max-width: 767px) {
-	.wrapper { width: 680px;}
-	.header__btn:last-of-type { border-right: 1px solid #fff;}
-	.header_search { display: none;}
-	.header__logo.col-4 { width: 50%;}
-	.header__loc_wrap.col-8 { width: 50%; }
-	.header__loc-les,
-	.header__loc-kup { width: 100%; margin-bottom: 20px; }
-	.header__loc-les > .col-6:first-child,
-	.header__loc-kup > .col-6:first-child { width: 60%;}
-	.header__loc-les > .col-6:last-child,
-	.header__loc-kup > .col-6:last-child { width: 40%;}
+@media (max-width: 767px) {
+	body { font-size: 14px;}
+	h1, .h1 { font-size: 26px;}
+	h2, .h2 { font-size: 18px;}
 
-	.header__worktime { position: absolute; width: 50%; top: -125px; left: 0; }
-	.header__soc_icons { position: absolute; width: 50%; top: -50px; left: 0; }
-
-	.main_menu > .wrapper { padding: 0; }
-	.main_menu__list { display: block; }
-	.main_menu__item { display: block; width: 50%; float: left; border-right: none !important; border-bottom: 1px solid #fff;}
-	.main_menu__item:nth-child(even) { border-left: 1px solid #fff;}
-	.main_menu__item:nth-last-child(2) { border-bottom: none;}
-	.main_menu__item:last-child { border-bottom: none;}
-	.main_menu__link { text-align: left; padding-left: 45px; }
-
-	.main_menu__item-search input[type="text"] { width: 207px;}
-
-	.research_item__desc { white-space: normal;}
-	.research_item__desc > .inline-block:nth-child(1) { width: 50%; float: left;}
-	.research_item__desc > .inline-block:nth-child(2) { width: 50%; float: left;}
-	.research_item__desc > .inline-block:nth-child(3) { width: 100%; display: block;}
-	.research_item__desc .btn.mgt35 { margin-top: 0 !important; }
-
-	.table-cell.center { width: 60%; }
-	.article_filter__form_list { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
-	.article_list__item { margin-bottom: 10px; }
-
-	.contacts_desc > .col-6 { width: 100%; margin-bottom: 15px; }
-	.contacts_form__fields .col-6 { width: 100% }
-
-	.dispanser h1+.table { display: block;}
-	.dispanser h1+.table > .table-cell { display: block; margin-bottom: 15px;}
-	.dispanser__zone .col-4 { width: 100%; }
-	.dispanser__list.row > .col-4 { width: 50%; }
-	.dispanser__list.row > .col-4:nth-child(3n+1) { clear: none; }
-	.dispanser__list.row > .col-4:nth-child(2n+1) { clear: left; }
-	.dispanser__cost.nowrap { white-space: normal; }
-	.left_menu__link { font-size: 16px; }
-	.docs__list { padding: 0; }
-	.docs__item { width: 50% }
-	.docs__item:nth-child(3n+1) { clear: none; }
-	.docs__item:nth-child(2n+1) { clear: left; }
-
-	.foto_cat__item_img_wrap.col-8 { width: 100%; }
-	.foto_cat__item_desc_wrap.col-4 { display: none; }
-	.foto__list > .col-6 { width: 100%; }
-
-	.main_menu__item-cart { width: 68px; }
-
-	.form_wrap { padding: 14px; }
-	.service_slider__title { font-size: 18px; }
-	.service_slider .slick-dots { left: auto; right: 28px; bottom: 28px; }
-	.service_wrap__item.service_item.col-by5 { width: 50%; }
-	.service_wrap__item.service_item.col-by5:nth-child(2n+1) { clear: left; }
-	.service_item .service_item__title:before { position: absolute; margin: auto; top: 0; bottom: 0; content: ''; background-color: #f7f5f4; width: 2000px; left: -2000px; z-index: -1;}
-	.service_item .service_item__title:after { position: absolute; margin: auto; top: 0; bottom: 0; content: ''; background-color: #f7f5f4; width: 2000px; right: -2000px; z-index: -1;}
-	.corp_form .col-6 { width: 100%; }
-	.preim_block { height: auto; }
-
-	.service_slider__item .left { padding-top: 15px; }
-	.service_slider__title .font44 { font-size: 25px !important; }
-	.service_slider__title .font30 { font-size: 18px !important; }
-
-	.corp_banner__title { font-size: 25px; }
-	.corp_banner__price > span { font-size: 36px; }
-
-	.medspravki_banner__bottom  { padding: 15px; }
-	.medspravki_banner__bottom > span { display: block; }
-	.medspravki_banner__top { margin: 0 15px; }
-	.medspravki_banner__middle {  padding: 15px;}
-
-	.contacts_form .col-6 { width: 100%; }
-
-	.kosmetology_form__wrap  { padding: 3px 14px 3px 15px; background: none #f0f1f1; }
-	.kospetology_preim .col-6 { width: 100%; }
-	.kosmetology_how__item_img { display: none; }
-	.kosmetology_protiv:after { display: none; }
+	.header_menu { display: none;}
+	.mobile_menu__toggle { display: inline-block;}
 	
-}
-/*680*/		@media (max-width: 680px) {
-	.wrapper { width: 480px;}
-	.header__loc_wrap.col-8 { width: 311px;}
-	.header__loc-les { width: 100%; margin-bottom: 20px;}
-	.header__loc-kup { width: 100%; margin-bottom: 20px;}
-	.header__worktime { float: none;}
-	.heder__worktime_desc { display: block; margin-bottom: 10px;}
-	.header__soc_icons { float: none;}
-	.header__logo.col-4 { width: 311px; float: none; margin: 0 auto 20px; }
-	.header__loc_wrap.col-8 { width: 311px; float: none; margin: 0 auto 20px; }
-	.header__worktime { position: relative; width: auto; top: 0; left: 0; }
-	.header__soc_icons { position: relative; width: auto; top: 0; left: 0; }
+	.contacts_page .wrapper > .row > .col-6 { width: 100%;}
+	.contacts_shop.col-3 { width: 33%;}
+	.contacts_shop.col-3:nth-child(4n+1) { clear: none;}
+	.contacts_shop.col-3:nth-child(3n+1) { clear: left;}
 
-	.table-cell.left { width: 100%; display: block;}
-	.table-cell.center { width: 100%; display: block;}
+	.header_search { border: none;}
+	.header_search__toggle { margin: 0; }
+	.header_cart { white-space: nowrap;}
+	.header_cart_dropdown { white-space: normal;}
 
+	.header_bottom > .wrapper.justify { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+	.header_bottom > .wrapper.justify:before,
+	.header_bottom > .wrapper.justify:after { content: none;}
+	.main_menu {  -webkit-box-ordinal-group: 6;  -ms-flex-order: 5;  order: 5; margin: 0 -10px; width: calc(100% + 20px); border-bottom: 1px solid #d4d4d4;}
+	.main_menu__toggle { display: block;}
+	.main_menu__toggle:active { background-color: #fff;}
+	.main_menu > ul { display: none;}
+	.main_menu__item { display: block;}
+	.main_menu__link { font-size: 14px; text-align: center; height: 36px; line-height: 36px; display: block;}
 
+	.footer_phone { font-size: 18px;}
+	.cat_i__btn.btn { font-size: 14px;}
+	.cat_left.col-3 { width: 100%; display: none;}
+	.cat_right.col-9 { width: 100%;}
+	.pagi { font-size: 18px;}
 
-	.footer__top > .wrapper > .row > .col-3,
-	.footer__top > .wrapper > .row > .col-4,
-	.footer__top > .wrapper > .row > .col-5 { width: 100%; margin-bottom: 20px;}
-	.footer__worktime:before,
-	.footer__location:before { top: 0;}
-	.footer__top .col-12 { text-align: center;}
+	.complete_table td { padding: 5px;}
 
-
-	.lab .breadcrumbs { display: none;}
-	.lab .main_layout.table { display: block;}
-	.lab .main_layout.table > .table-cell { display: block;}
-	.lab .main_layout.table > .table-cell.left,
-	.lab .main_layout.table > .table-cell.center { width: 100%;}
-	.lab .left_menu_research { margin-top: 20px;}
-
-	.research_item__desc { white-space: normal;}
-	.research_item__desc > .inline-block:nth-child(1) { width: 50%; float: left;}
-	.research_item__desc > .inline-block:nth-child(2) { width: 50%; float: left;}
-	.research_item__desc > .inline-block:nth-child(3) { width: 100%; display: block;}
-	.research_item__desc .btn.mgt35 { margin-top: 0 !important; }
-
-	.left_menu__link { font-size: 15.5px; }
-
-	.dispanser__list.row > .col-4 { width: 100%; }
-	.main_menu__list-lab .main_menu__item { width: 100%; border: none; border-bottom: 1px solid #fff; }
-	.main_menu__item-cart { width: 90px; }
-	.main_menu__item-search input[type="text"] { width: 326px; }
-	.main_menu__item.main_menu__item-search { border-bottom: none; }
-	.form_wrap { padding: 12px; }
-	.zapis_form .btn { margin-left: 0; }
-
-	.service_slider__item .col-5.left { width: 100%; padding: 30px;}
-	.service_slider__item .col-7.right { width: 100%; }
-	.service_slider__item .btn { float: right; margin-top: -20px;}
-	.service_slider__title { font-size: 26px; }
-	.about_list__item_wrap { min-height: 121px; }
-	.main_map >.col-6 { width: 100%; }
-
-	.corp_form .col-6 { width: 100%; }
-
-	.corp_preim__item{ width: 50%; }
-	.corp_preim__item:nth-child(3n+1) { clear: none; }
-	.corp_preim__item:nth-child(2n+1) { clear: left; }
-
-	.corp_banner__price { bottom: 115px; }
-	.corp_preim-inside .corp_preim__item.col-4 { width: 100%;  }
-
-	.kosmetology_banner .font28 { font-size: 20px !important; }
-	.kosmetology_banner .font27 { font-size: 19px !important; }
-	.kosmetology_banner .font26 { font-size: 18px !important; }
 }
 
- 
+@media (max-width: 720px) {
+	.cat_items.row > .col-4 { width: 50%;}
+	.cat_items.row > .col-4:nth-child(3n+1) { clear: none;}
+	.cat_items.row > .col-4:nth-child(2n+1) { clear: left;}
+	.complete_table__total > span { font-size: 16px;}
 
-/*480*/		@media (max-width: 480px) {
-	.wrapper { width: 100%;}
-	.header__top > .wrapper { padding: 0;}
-	.header__btn.table-cell { display: block; border: none; border-bottom: 1px solid #fff;}
+}
+
+
+@media (max-width: 680px) {
+	.contacts_shop.col-3 { width: 50%;}
+	.contacts_shop.col-3:nth-child(3n+1) { clear: none;}
+	.contacts_shop.col-3:nth-child(2n+1) { clear: left;}
+
+	.footer > .wrapper > .row > .col-3 { width: 50%;}
+	.footer > .wrapper > .row > .col-3:nth-child(3) { clear: left;}
+	.footer > .wrapper > .row > .col-3:nth-child(1),
+	.footer > .wrapper > .row > .col-3:nth-child(2) { margin-bottom: 30px;}
+
+	.pagi { font-size: 16px;}
+}
+
+@media (max-width: 520px) {
+
+	.complete_table td:first-child { width: 40px;}
+	.complete_table td:nth-child(3),
+	.complete_table td:nth-child(4) { display: none;}
+	.complete_table__title { font-size: 14px;}
+}
+
+@media (max-width: 480px) {
+	.header_top > .wrapper { height: 80px; background: none;}
+	.header_phone { position: absolute; bottom: 0; right: 10px;}
+	.mobile_menu__toggle { margin-left: 0;}
+	.header_cart__content > .first { display: none;}
+	.header_cart_toggle { margin-right: 0;}
+	.header_cart__total { margin: 0;}
+	.header_logo { margin-top: -24px;}
+	.header_logo__img { max-width: 100%; max-height: 100%;}
+	.header_search { margin: 15px 0;}
+	.header_cart { margin: 15px 0;}
+	.header_logo__link { width: 125px;}
 	
-	.header__logo.col-4 { width: 311px; margin: 0 auto 20px; display: block; float: none;}
-	.header__loc_wrap.col-8 { width: 90%; float: none; margin: 0 auto;}
+	.cat_items.row > .col-4 { width: 100%;}
+	.cat_i_fire, .cat_i__btn.btn { padding: 0 7px;}
+	.cat_i_fire:before, .cat_i__btn.btn:before { margin-right: 5px;}
 
-	.footer__top > .wrapper > .row > .col-3,
-	.footer__top > .wrapper > .row > .col-4,
-	.footer__top > .wrapper > .row > .col-5 { width: 100%; margin-bottom: 20px;}
-	.footer__worktime:before,
-	.footer__location:before { top: 0;}
-	.footer__top .col-12 { text-align: center;}
+	.pagi { font-size: 14px;}
+	.pagi__link, .pagi__current_item, .pagi__item { width: 31px;}
+	.complete_info__list dd { width: 175px;}
 
-	.pagi { text-align: center;}
 
-		
-	.lab .breadcrumbs { display: none;}
-	.lab .main_layout.table { display: block;}
-	.lab .main_layout.table > .table-cell { display: block;}
-	.lab .main_layout.table > .table-cell.left,
-	.lab .main_layout.table > .table-cell.center { width: 100%;}
-	.lab .left_menu_research { margin-top: 20px;}
-
-	.research_item__desc { white-space: normal;}
-	.research_item__desc > .inline-block:nth-child(1) { width: 50%; float: left;}
-	.research_item__desc > .inline-block:nth-child(2) { width: 50%; float: left;}
-	.research_item__desc > .inline-block:nth-child(3) { width: 100%; display: block;}
-	.research_item__desc .btn.mgt35 { margin-top: 0 !important; }
-
-	.table-cell.left { width: 100%; display: block;}
-	.table-cell.center { width: 100%; display: block;}
-
-	.left_menu { margin-left: -10px; margin-right: -10px; padding: 0; }
-	.left_menu__item { display: block; width: 50%; float: left; }
-	.left_menu__item:nth-child(2n+1) { clear: left; }
-	.left_menu__item:nth-last-child(2) { border-bottom: 1px dashed #959595;}
-	.left_menu__link { padding-left: 65px; padding-right: 20px; font-size: 15px; }
-	.left_menu__link > img { left: 0; }
-
-	.dispanser__list.row > .col-4 { width: 50%; }
-
-	.main_menu__item-search > .table > .table-cell:last-child { width: 90px; }
-	.main_menu__item-search input[type="text"] { width: 100%; border-radius: 3px; }
-	.main_menu__item-search input[type="text"] + button { margin-left: -54px;}
-
-	.price_table td { padding: 10px; font-size: 13px; }
-	.form_wrap { padding: 10px; }
-
-	.main_menu__item { width: 100%; border: none !important; border-bottom: 1px solid #fff !important; }
-	.header__btn { text-align: left; padding-left: 45px; }
-	.service_slider__item .btn { float: none; margin-top: 10px; }
-	.about_list { text-align: center; background-color: #EE464E;}
-	.about_list__item.col-by5 { width: 30%; float: none; display: inline-block; vertical-align: middle;}
-
-	.kosmetology_banner .font28 { font-size: 17px !important; }
-	.kosmetology_banner .font27 { font-size: 16px !important; }
-	.kosmetology_banner .font26 { font-size: 15px !important; }
 
 }
 
-/*320*/		@media (max-width: 340px) {
-	.left_menu__link { font-size: 14px; }
-	.dispanser__list.row > .col-4 { width: 100%; }
-	.price_table td { padding: 10px; font-size: 13px; }
-	.main_menu__item { width: 100%; border: none !important; border-bottom: 1px solid #fff !important; }
-	.service_wrap__item.service_item.col-by5 { width: 100%; }
-	.service_item__links { padding-left: 10px; }
-	.corp_preim__item { width: 100%; }
-	.corp_top__item { width: 100%; }
-	.corp_preim-inside .corp_preim__item.col-4 { width: 100%; }
+@media (max-width: 340px) {
+	.contacts_shop.col-3 { width: 100%;}
+	.complete_info__list dd { width: 100%; margin-bottom: 0;}
+	.complete_info__list dt { width: 100%; margin-bottom: 10px;}
 
-	.medspravki_banner__middle .table-cell:first-child { font-size: 20px; }
-	.medspravki_banner__price_top { font-size: 18px; }
-	.medspravki_banner__price_top > span { font-size: 22px; }
-	.medspravki_banner__price_bottom { font-size: 18px; }
-	.medspravki_banner__price_bottom > span { font-size: 26px; }
 
-	.sanknizka_form__top,
-	.sanknizka_form__bottom { width: 100%; }
-	.sanknizka_form__top .field,
-	.sanknizka_form__bottom .field { position: relative; left: 0 !important; top: 0 !important; margin-bottom: 20px; width: 100% !important;}
-	.sanknizka_form__top .field:after,
-	.sanknizka_form__bottom .field:after { display: none !important; }
-	.sanknizka_form__top  img,
-	.sanknizka_form__bottom  img { display: none; }
-	.sanknizka_form .btn { position: relative; }
 }
-
-
-
-
 
 

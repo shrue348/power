@@ -22,6 +22,9 @@
 	<script src="js/baguetteBox.min.js"></script>
 	<script src="js/jquery.mCustomScrollbar.min.js"></script>
 	<script src="js/jquery.selectbox.min.js"></script>
+	
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 	<script src="js/ready.js"></script>
 </head>
 <body>
@@ -34,15 +37,16 @@
 		<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Бонусы</a></li>
 		<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Акции</a></li>
 		<li class="mobile_menu__item"><a href="article.html" class="mobile_menu__link">Статьи</a></li>
-		<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Магазины</a></li>
+		<li class="mobile_menu__item"><a href="contacts.html" class="mobile_menu__link">Магазины</a></li>
 	</ul>
+	
 	<div class="mobile_menu__overlay"></div>
 </div>
 
 <div class="header">
 	<div class="header_top">
 		<div class="wrapper justify">
-			<a href="" class="mobile_menu__toggle justify__item">M</a>
+			<a href="javascript:;" class="mobile_menu__toggle justify__item"></a>
 
 			<ul class="header_menu justify__item clear">
 				<li class="header_menu__item"><a href="" class="header_menu__link">О компании</a></li>
@@ -51,7 +55,7 @@
 				<li class="header_menu__item"><a href="" class="header_menu__link">Бонусы</a></li>
 				<li class="header_menu__item"><a href="" class="header_menu__link">Акции</a></li>
 				<li class="header_menu__item"><a href="article.html" class="header_menu__link">Статьи</a></li>
-				<li class="header_menu__item"><a href="" class="header_menu__link header_menu__link-active">Магазины</a></li>
+				<li class="header_menu__item"><a href="contacts.html" class="header_menu__link header_menu__link-active">Магазины</a></li>
 			</ul>
 			
 			<div class="header_socicons justify__item">
@@ -75,13 +79,16 @@
 					<img src="img/logo.png" alt="OLBshop" class="header_logo__img">
 				</a>
 			</div>
-
-			<ul class="main_menu justify__item">
-				<li class="main_menu__item"><a href="" class="main_menu__link">Производители</a></li>
-				<li class="main_menu__item"><a href="catalog.html" class="main_menu__link">Каталог</a></li>
-				<li class="main_menu__item"><a href="" class="main_menu__link">Задачи</a></li>
-				<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
-			</ul>
+			<div class="main_menu justify__item">
+				<a href="javascript:;" class="main_menu__toggle">Меню</a>
+				<ul class="">
+					<li class="main_menu__item"><a href="" class="main_menu__link">Производители</a></li>
+					<li class="main_menu__item"><a href="catalog.html" class="main_menu__link">Каталог</a></li>
+					<li class="main_menu__item"><a href="" class="main_menu__link">Задачи</a></li>
+					<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
+				</ul>
+			</div>
+				
 				
 			<div class="header_search justify__item">
 				<a href="javascript:;" class="header_search__toggle" onclick="$('.header_search__dropdown').fadeToggle();"></a>
@@ -90,8 +97,8 @@
 			<div class="header_cart justify__item">
 				<a href="javascript:;" class="header_cart_toggle" onclick="$('.header_cart_dropdown').fadeToggle();"></a>
 				<div class="header_cart__content">
-					<span class="header_cart__count">22</span> шт.
-					<span class="header_cart__total">125 000</span> руб.
+					<span class="first"><span class="header_cart__count">22</span> шт.</span>
+					<span class="second"><span class="header_cart__total">125 000</span> руб.</span>
 				</div>
 
 				<div class="header_cart_dropdown" sytle="display: none;">
@@ -139,207 +146,1288 @@
 	</div>
 </div>
  
+<div class="main_slider">
+	<div class="wrapper">
+		<div id="slider" class="carousel fade">
+			<div class="carousel-inner">
+				<div class="item active" >
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+				</div>
+				<div class="item" >
+					123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+				</div>
+				<div class="item" >
+					123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+						123123 <br>
+				</div>
+			</div>
+			
 
-
- <div class="wrapper">
-
-	<div class="mgb70"></div>
-
-
- 	<div class="cat_items row mgb70">
- 		<div class="col-3">
- 			<div class="cat_i">
- 				<div class="cat_i_wrap">
- 					<a href="catalog_item.html">
- 						<div class="cat_i__img_wrap">
- 							<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
- 						</div>
- 			
- 						<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
- 					</a>
- 			
- 			
- 					<div class="cat_i__price">
- 						<span class="cat_i__price_label">Инт. цена:</span>
- 						<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
- 					</div>
- 					<div class="cat_i__price">
- 						<span class="cat_i__price_label">В розницу:</span>
- 						<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
- 					</div>
- 			
- 					<div class="cat_i__btns clear">
- 						<span class="cat_i_fire"><span>+50 баллов</span></span>
- 						<a href="" class="cat_i__btn btn">В корзину</a>
- 					</div>
- 					
- 					<div class="cat_i__hidden">
- 						<div class="mgb5">
- 							<div class="form_item_label">Расфасовка</div>
- 							<select name="" >
- 								<option value="">В мешочках</option>
- 								<option value="">В кулечках</option>
- 								<option value="">В баночках</option>
- 							</select>
- 						</div>
- 						<div class="mgb0">
- 							<div class="form_item_label">Вкус</div>
- 							<select name="" >
- 								<option value="">Как у калоши</option>
- 								<option value="">Сойдет</option>
- 								<option value="">Сладкий</option>
- 							</select>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
+			<a class="left carousel-control" href="#slider" data-slide="prev"></a>
+			<a class="right carousel-control" href="#slider" data-slide="next"></a> 
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#slider" data-slide-to="0"></li>
+				<li data-target="#slider" data-slide-to="1"></li>
+				<li data-target="#slider" data-slide-to="2"></li>
+			</ol>
 		</div>
-		<div class="col-3">
- 			<div class="cat_i">
- 				<div class="cat_i_wrap">
- 					<a href="catalog_item.html">
- 						<div class="cat_i__img_wrap">
- 							<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
- 						</div>
- 			
- 						<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
- 					</a>
- 			
- 			
- 					<div class="cat_i__price">
- 						<span class="cat_i__price_label">Инт. цена:</span>
- 						<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
- 					</div>
- 					<div class="cat_i__price">
- 						<span class="cat_i__price_label">В розницу:</span>
- 						<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
- 					</div>
- 			
- 					<div class="cat_i__btns clear">
- 						<span class="cat_i_fire"><span>+50 баллов</span></span>
- 						<a href="" class="cat_i__btn btn">В корзину</a>
- 					</div>
- 					
- 					<div class="cat_i__hidden">
- 						<div class="mgb5">
- 							<div class="form_item_label">Расфасовка</div>
- 							<select name="" >
- 								<option value="">В мешочках</option>
- 								<option value="">В кулечках</option>
- 								<option value="">В баночках</option>
- 							</select>
- 						</div>
- 						<div class="mgb0">
- 							<div class="form_item_label">Вкус</div>
- 							<select name="" >
- 								<option value="">Как у калоши</option>
- 								<option value="">Сойдет</option>
- 								<option value="">Сладкий</option>
- 							</select>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
-		</div>
-		<div class="col-3">
- 			<div class="cat_i">
- 				<div class="cat_i_wrap">
- 					<a href="catalog_item.html">
- 						<div class="cat_i__img_wrap">
- 							<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
- 						</div>
- 			
- 						<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
- 					</a>
- 			
- 			
- 					<div class="cat_i__price">
- 						<span class="cat_i__price_label">Инт. цена:</span>
- 						<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
- 					</div>
- 					<div class="cat_i__price">
- 						<span class="cat_i__price_label">В розницу:</span>
- 						<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
- 					</div>
- 			
- 					<div class="cat_i__btns clear">
- 						<span class="cat_i_fire"><span>+50 баллов</span></span>
- 						<a href="" class="cat_i__btn btn">В корзину</a>
- 					</div>
- 					
- 					<div class="cat_i__hidden">
- 						<div class="mgb5">
- 							<div class="form_item_label">Расфасовка</div>
- 							<select name="" >
- 								<option value="">В мешочках</option>
- 								<option value="">В кулечках</option>
- 								<option value="">В баночках</option>
- 							</select>
- 						</div>
- 						<div class="mgb0">
- 							<div class="form_item_label">Вкус</div>
- 							<select name="" >
- 								<option value="">Как у калоши</option>
- 								<option value="">Сойдет</option>
- 								<option value="">Сладкий</option>
- 							</select>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
-		</div>
-		<div class="col-3">
- 			<div class="cat_i">
- 				<div class="cat_i_wrap">
- 					<a href="catalog_item.html">
- 						<div class="cat_i__img_wrap">
- 							<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
- 						</div>
- 			
- 						<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
- 					</a>
- 			
- 			
- 					<div class="cat_i__price">
- 						<span class="cat_i__price_label">Инт. цена:</span>
- 						<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
- 					</div>
- 					<div class="cat_i__price">
- 						<span class="cat_i__price_label">В розницу:</span>
- 						<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
- 					</div>
- 			
- 					<div class="cat_i__btns clear">
- 						<span class="cat_i_fire"><span>+50 баллов</span></span>
- 						<a href="" class="cat_i__btn btn">В корзину</a>
- 					</div>
- 					
- 					<div class="cat_i__hidden">
- 						<div class="mgb5">
- 							<div class="form_item_label">Расфасовка</div>
- 							<select name="" >
- 								<option value="">В мешочках</option>
- 								<option value="">В кулечках</option>
- 								<option value="">В баночках</option>
- 							</select>
- 						</div>
- 						<div class="mgb0">
- 							<div class="form_item_label">Вкус</div>
- 							<select name="" >
- 								<option value="">Как у калоши</option>
- 								<option value="">Сойдет</option>
- 								<option value="">Сладкий</option>
- 							</select>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
-		</div>
- 	</div>
+	</div>
+</div>
 
 
- 	
- </div>
+<div class="main_carousels_tabs">
+	<div class="wrapper">
+		<ul class="cat_item__tabs" role="tablist">
+			<li class="active">
+				<a href="#weight" data-toggle="tab">Я хочу сбросить вес</a>
+			</li>
+			<li>
+				<a href="#mass" data-toggle="tab">Я хочу набрать массу</a>
+			</li>
+		</ul>
+
+
+		<div class="cat_item__tabs_content tab-content">
+			<div id="weight" class="tab-pane fade in active">
+				<div class="cat_item__carousel_wrap carousel_wrap">
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mass" class="tab-pane fade">
+				<div class="cat_item__carousel_wrap carousel_wrap">
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="main_text txt">
+	<div class="wrapper">
+		<h1>Интернет-магазин спортивного питания OlympicBody</h1>
+
+		<p>Здоровый образ жизни – новая тенденция современного общества. Быть спортивным не только полезно, но и стильно. Профессиональные спортсмены и любители выбирают для себя только полезное и здоровое питание. Всегда будьте в прекрасной форме и достигайте новых высот в профессиональной карьере.</p>
+		<p>В интернет-магазине OlympicBody представлено спортивное питание с доставкой по всей России. Мы предлагаем широкий ассортимент полезных и качественных добавок, которые помогут быстрее избавиться от лишнего веса, нарастить необходимую мышечную массу, укрепить суставы и связки или пополнить запас витаминов и микроэлементов.</p>
+	</div>
+</div>
+
+
+<div class="main_carousels_tabs">
+	<div class="wrapper">
+		<ul class="cat_item__tabs" role="tablist">
+			<li class="active">
+				<a href="#actions" data-toggle="tab">Акции</a>
+			</li>
+			<li>
+				<a href="#newest" data-toggle="tab">Новинки</a>
+			</li>
+			<li>
+				<a href="#hits" data-toggle="tab">Хиты продаж</a>
+			</li>
+		</ul>
+
+
+		<div class="cat_item__tabs_content tab-content">
+			<div id="actions" class="tab-pane fade in active">
+				<div class="cat_item__carousel_wrap carousel_wrap">
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="newest" class="tab-pane fade">
+				<div class="cat_item__carousel_wrap carousel_wrap">
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cat_item__carousel_item">
+						<div class="cat_i">
+							<div class="cat_i_wrap">
+								<a href="catalog_item.html">
+									<div class="cat_i__img_wrap">
+										<img src="img/_mini_card_img.png" alt="Sculptor Elite Vita 40 порций 400 грамм" class="cat_i__img">
+									</div>
+						
+									<div class="cat_i__title">Sculptor Elite Vita 40 порций 400 грамм</div>
+								</a>
+						
+						
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">Инт. цена:</span>
+									<span class="cat_i__price_val"><span class="font24">2 720</span> руб.</span>
+								</div>
+								<div class="cat_i__price">
+									<span class="cat_i__price_label">В розницу:</span>
+									<span class="cat_i__price_val"><span class="font20">3 420</span> руб.</span>
+								</div>
+						
+								<div class="cat_i__btns clear">
+									<span class="cat_i_fire"><span>+50 баллов</span></span>
+									<a href="" class="cat_i__btn btn">В корзину</a>
+								</div>
+								
+								<div class="cat_i__hidden">
+									<div class="mgb5">
+										<div class="form_item_label">Расфасовка</div>
+										<select name="" >
+											<option value="">В мешочках</option>
+											<option value="">В кулечках</option>
+											<option value="">В баночках</option>
+										</select>
+									</div>
+									<div class="mgb0">
+										<div class="form_item_label">Вкус</div>
+										<select name="" >
+											<option value="">Как у калоши</option>
+											<option value="">Сойдет</option>
+											<option value="">Сладкий</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="hits" class="tab-pane fade">3</div>
+		</div>
+	</div>
+</div>
+
+	
+
+
+
+
+
+<div class="main_partners">
+	<div class="wrapper">
+		<div class="h2">Наши партнеры</div>
+
+		<div class="main_partners__carousel carousel_wrap">
+			<div class="main_partners__carousel_item">
+				<img src="img/_partner_logo.png" alt="">
+			</div>
+			<div class="main_partners__carousel_item">
+				<img src="img/_partner_logo.png" alt="">
+			</div>
+			<div class="main_partners__carousel_item">
+				<img src="img/_partner_logo.png" alt="">
+			</div>
+			<div class="main_partners__carousel_item">
+				<img src="img/_partner_logo.png" alt="">
+			</div>
+			<div class="main_partners__carousel_item">
+				<img src="img/_partner_logo.png" alt="">
+			</div>
+			<div class="main_partners__carousel_item">
+				<img src="img/_partner_logo.png" alt="">
+			</div>
+			<div class="main_partners__carousel_item">
+				<img src="img/_partner_logo.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="map" class="main_map"></div>
 <div class="footer">
 	<div class="wrapper">
 		<div class="row">
