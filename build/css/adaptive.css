@@ -9,6 +9,10 @@
 	.cat_item__top > .row > .col-4:last-child { width: 100%; }
 	.cat_item__info { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
 	.cabinet_right .col-4 { width: 100%;}
+	.cat_switch { display: none;}
+
+	.main_slider .item .slider_content { left: 0; width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+	.slider_content__img { }
 }
 
 
@@ -39,6 +43,8 @@
 
 	.complete_table td { padding: 5px;}
 	.cart_table td { padding: 5px; }
+
+	.pop_cats__item_title { font-size: 18px;}
 }
 			 
 @media (max-width: 767px) {
@@ -73,17 +79,19 @@
 	.cat_i__btn.btn { font-size: 14px;}
 	.cat_left.col-3 { width: 100%; display: none;}
 	.cat_right.col-9 { width: 100%;}
-
 	.cabinet_left.col-3 { width: 45%;}
 	.cabinet_right.col-9 { width: 55%;}
-
 	.pagi { font-size: 18px;}
-
 	.complete_table td { padding: 5px;}
 	.cart_table td { padding: 5px; }
-
 	.cart_table td:nth-child(3),
 	.cart_table td:nth-child(4) { display: none; }
+
+	.main_slider .slider_content__title { font-size: 36px;}
+	.main_slider .slider_content__title-2 { font-size: 18px;}
+	.main_slider .slider_content__title-3 { font-size: 18px;}
+
+	.pop_cats__item_title { font-size: 16px;}
 
 
 }
@@ -109,15 +117,15 @@
 	.contacts_shop.col-3 { width: 50%;}
 	.contacts_shop.col-3:nth-child(3n+1) { clear: none;}
 	.contacts_shop.col-3:nth-child(2n+1) { clear: left;}
-
 	.footer > .wrapper > .row > .col-3 { width: 50%;}
 	.footer > .wrapper > .row > .col-3:nth-child(3) { clear: left;}
 	.footer > .wrapper > .row > .col-3:nth-child(1),
 	.footer > .wrapper > .row > .col-3:nth-child(2) { margin-bottom: 30px;}
-
 	.pagi { font-size: 16px;}
-
 	.cart_table td:nth-child(6) { display: none; }
+	.pop_cats__row > .col-3 { width: 50%;}
+	.pop_cats__row > .col-3:nth-child(2n+1) { clear: left;}
+	.pop_cats__item { margin-bottom: 20px;}
 }
 
 @media (max-width: 520px) {
@@ -129,9 +137,18 @@
 
 	.cabinet_left.col-3 { width: 100%;}
 	.cabinet_right.col-9 { width: 100%;}
+
+	.slider_content__img { width: 50%;}
+	.slider_content__desc { width: 50%;}
+
+	.main_pop_cats .h2,
+	.main_brands .h2 { font-size: 20px;}
 }
 
 @media (max-width: 480px) {
+	.breadcrumbs { font-size: 12px;}
+	.breadcrumbs__deliver { margin: 0 5px;}
+
 	.header_top > .wrapper { height: 80px; background: none;}
 	.header_phone { position: absolute; bottom: 0; right: 10px;}
 	.mobile_menu__toggle { margin-left: 0;}
