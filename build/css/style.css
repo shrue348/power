@@ -730,10 +730,12 @@ select {
 .main_text { margin-bottom: 50px; }
 .main_text > .wrapper { padding-top: 50px; padding-bottom: 45px; padding-right: 280px;}
 .main_text > .wrapper:after { position: absolute; right: 0; top: 0; content: url(../img/main_text_back.png); z-index: -1;}
-.main_text-2 { margin-bottom: 50px; }
-.main_text-2 > .wrapper { padding-top: 50px; padding-bottom: 45px; padding-left: 280px;}
+.main_text-2 { }
+.main_text-2 > .wrapper { padding-top: 50px; padding-bottom: 65px; padding-left: 280px;}
 .main_text-2 > .wrapper:before { position: absolute; left: 0; top: 0; content: url(../img/main_text_back-2.png); z-index: -1;}
-
+.main_text-3 { margin-bottom: 50px; }
+.main_text-3 > .wrapper { padding-top: 50px; padding-bottom: 45px; padding-right: 280px;}
+.main_text-3 > .wrapper:after { position: absolute; right: 0; top: 0; content: url(../img/main_text_back-3.png); z-index: -1;}
 
 .main_brands { margin-bottom: 40px;}
 .main_brands .h2 { font-weight: normal; font-size: 32px;}
@@ -782,27 +784,24 @@ select {
     transition: all 0.3s ease;
 }
 .pop_cats__item_img_wrap img { display: block; line-height: 1; }
-
 .pop_cats__item:hover .pop_cats__item_img_wrap:before { -webkit-transform: rotateZ(-26deg) translateX(-70px); transform: rotateZ(-26deg) translateX(-70px);}
 .pop_cats__item:hover .pop_cats__item_img_wrap:after { border-color: transparent; -webkit-transform: rotateZ(-26deg) translateX(510px); transform: rotateZ(-26deg) translateX(510px);}
 
 
+.main_preim { padding: 25px 0 25px; background: url(../img/main_preim_back.png) no-repeat scroll center / cover transparent; }
+.main_preim__item.col-3 { color: #fff; text-align: center; padding: 60px 38px 0;}
+.main_preim__item_top { border-bottom: 1px dashed #fff; position: relative; font-size: 20px; font-weight: bold; padding: 20px 0; margin-bottom: 15px; font-size: 18px;}
+.main_preim__item_top:before { position: absolute; margin: auto; z-index: 2; left: 0; right: 0; top: -55px; content: url(../img/main_preim_fire.png); }
+.main_preim__item_desc { font-style: italic; font-weight: 300; }
+.main_preim__row { margin-bottom: 30px; }
+.main_preim__desc { color: #fff; background: url(../img/main_preim_red_back.png) no-repeat scroll left center transparent; padding: 20px 20px 20px 80px; position: relative; }
 
+.main_banners { margin-top: -45px; position: relative;}
+.main_banners > img { display: block; margin: 0 auto; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main_banners > .wrapper { margin: auto; left: 0; right: 0; top: 0; height: 100%; position: absolute; z-index: 10; }
+.main_banners > .wrapper > .row { height: 100%;}
+.main_banners > .wrapper > .row > .col-6  { height: 100%;}
 
 
 

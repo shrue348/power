@@ -35,6 +35,17 @@ $(function(){
 	$('.mobile_menu__overlay ').on('click', function(){
 		$('.mobile_menu').removeClass('open');
 	})
+
+	$(function(){
+	var min_height,
+		win_height = document.documentElement.clientHeight,
+		header_height = $('.header').height(),
+		footer_height = $('.footer').height(),
+		breadcrumbs_height = $('.breadcrumbs').height();
+		
+	min_height = win_height - header_height - footer_height - breadcrumbs_height -106;
+	$('.breadcrumbs + div').css('min-height', min_height);	
+});
 });
 
 
